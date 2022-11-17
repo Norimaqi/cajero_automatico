@@ -1,0 +1,6 @@
+    boton.forEach((element) => {
+      element.addEventListener("click", () => {
+        cantidad.innerHTML += boton.innerHTML
+        console.log(cantidad);
+      })
+    })

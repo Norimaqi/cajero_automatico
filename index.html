@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/23a7117ba0.js" crossorigin="anonymous"></script>
+    <title>Cajero Automático</title>
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./images/1.png">
+        <div class="banco">
+            <h1 id="bienvenida">TE DAMOS LA BIENVENIDA A NUESTRO BANCO </h1>
+            <p>Banco Nacional de Monstruos Mexicanos 🇲🇽 </p>
+        </div>
+        
+        <h1 id="usuario"> </h1>
+
+        <img src="./images/3.png" id="perfil">
+    </header>
+    <section>
+        <div id="contenedor">
+            <h1 id="saldo">Actualmente no tienes fondos</h1>
+            <div class="pantalla">
+            <input type="text" id="cantidad" placeholder="Ingrese cantidad"/><br><br>
+            </div>
+                <button class="mov" onclick="depositar()">Depositar</button>
+                <button class="mov" onclick="retirar()">Retirar</button>
+            
+        </div>
+        <div id="terminal">
+                
+            <button class="boton">1</button>
+            <button class="boton">2</button>
+            <button class="boton">3</button>
+            <button class="boton">4</button>
+            <button class="boton">5</button>
+            <button class="boton">6</button>
+            <button class="boton">7</button>
+            <button class="boton">8</button>
+            <button class="boton">9</button>
+            <button class="boton">.</button>
+            <button class="boton">0</button>
+            <button class="boton">↤</button>
+            <button class="boton limpiar">limpiar</button>
+        </div>
+        <div id="mons">
+            <img src="./images/2.png">
+        </div>
+        <div id="clr1">
+            <p> Cúal prefieres?</p>
+            <span onclick="cambiar_color2 ('#0059ff')" style="--clr:#0059ff"></span>
+            <span onclick="cambiar_color2 ('#ca00d1')" style="--clr:#ca00d1"></span>
+            <span onclick="cambiar_color2 ('#ff4dc1')" style="--clr:#ff4dc1"></span>
+            <span onclick="cambiar_color2 ('#3cff00')" style="--clr:#3cff00"></span>
+            <span onclick="cambiar_color2 ('#e6f700')" style="--clr:#e6f700"></span>
+            <span onclick="cambiar_color2 ('#ff9900')" style="--clr:#ff9900"></span>
+            <span onclick="cambiar_color2 ('#ff2500')" style="--clr:#ff2500"></span>
+            <span onclick="cambiar_color2 ('#ffffff')" style="--clr:#ffffff"></span>
+         
+        </div>
+    </section>
+    
+    
+    
+    <script src="main.js"></script>
+    
+    
+    
+</body>
+</html>

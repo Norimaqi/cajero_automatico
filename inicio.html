@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="./inicio.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div id="contenedor">
+      <form id="acceso">
+        <h1 id="text">Ingresa aquí</h1>
+        <p>Usuario:</p>
+        <input type="text" id="username" placeholder="Ingrese su nombre"/>
+        <p>Contraseña:</p>
+        <input type="password" id="password" placeholder="Ingrese su contraseña" maxlength="10">
+        <a href="#" onclick="save_username()" id="btn">Iniciar sesión</a>
+        
+    <div class="clr">
+        <p> Cúal prefieres?</p>
+        <span onclick="cambiar_color('#0059ff')" style="--clr:#0059ff"></span>
+        <span onclick="cambiar_color ('#ca00d1')" style="--clr:#ca00d1"></span>
+        <span onclick="cambiar_color ('#ff4dc1')" style="--clr:#ff4dc1"></span>
+        <span onclick="cambiar_color ('#3cff00')" style="--clr:#3cff00"></span>
+        <span onclick="cambiar_color ('#e6f700')" style="--clr:#e6f700"></span>
+        <span onclick="cambiar_color ('#ff9900')" style="--clr:#ff9900"></span>
+        <span onclick="cambiar_color ('#ff2500')" style="--clr:#ff2500"></span>
+        <span onclick="cambiar_color ('#ffffff')" style="--clr:#ffffff"></span>
+      </form>
+    </div>
+   
+   
+  </body>
+  <script src="main.js"></script>
+  
+ 
+</html>
